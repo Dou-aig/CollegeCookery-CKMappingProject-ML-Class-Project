@@ -1,0 +1,37 @@
+/* Remove default page margins and fill the whole window */
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+}
+
+/* The grid container. JS sets the number of columns and rows for you. */
+#grid {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  gap: 2px;              /* space between squares; set to 0 for no gaps */
+}
+
+/* Every photo in the grid */
+#grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* crop photos to fill the square instead of stretching */
+  display: block;
+  opacity: 1;
+  transition: opacity var(--fade, 600ms) ease-in-out;
+}
+
+/* JS adds this class to fade a photo out, then removes it to fade the new one in */
+#grid img.hidden {
+  opacity: 0;
+}
+
+/* Shown if the photo list is empty */
+#message {
+  color: #fff;
+  font-family: sans-serif;
+  padding: 2rem;
+}
