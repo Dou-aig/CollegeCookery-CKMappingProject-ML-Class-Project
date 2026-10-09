@@ -1,2 +1,3 @@
-# CollegeCookery-Certifications-and-Projects-List-
-A repository detailing projects and certifications I'm working on for college.
+# CollegeCookery-CKMappingProject-ML-Class-Project
+This project requires new images to be gathered WITH geodata enabled from a device.
+Currently collecting data... 
